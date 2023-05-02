@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             x:Class="RHSkills.Views.WelcomePage"
+             BackgroundColor="Gainsboro">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Margin="0,90">
+                <StackLayout >
+                    <Label Text="Bienvenue !" TextColor="Black"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="20" Margin="0,0,0,20" />
+
+                    <Frame BackgroundColor="#251F87" CornerRadius="200" Padding="0" WidthRequest="160" HeightRequest="160"
+                   HorizontalOptions="Center" VerticalOptions="Center" Margin="0,20,0,20">
+                        <Image Source="accueil.jpg" Aspect="AspectFill"/>
+                    </Frame>
+
+                </StackLayout>
+                <StackLayout HorizontalOptions="Center">
+                    <Label Text="Connectez-vous ou créez votre compte" FontSize="14"
+                       HorizontalTextAlignment="Center" TextColor="Black"/>
+
+                    <Label Text="pour trouver votre prochaine carrière." FontSize="15" Margin="0,-10,0,5"
+                       HorizontalTextAlignment="Center" TextColor="Black"/>
+                </StackLayout>
+                <StackLayout Margin="0,10" Spacing="15">
+                    <Button Text="Je me connecte" BackgroundColor="#251F87" CornerRadius="25" 
+                        VerticalOptions="End" TextColor="White" Margin="40,0,40,0"
+                            x:Name="Login" TextTransform="None" Clicked="Login_Clicked"/>
+
+                    <Button Text="Je suis nouveau" BackgroundColor="Gainsboro" CornerRadius="25" 
+                        VerticalOptions="End" TextColor="#251F87" Margin="80,0,80,0" 
+                            BorderColor="#251F87" BorderWidth="2" TextTransform="None" x:Name="NvCompte"
+                            Clicked="NvCompte_Clicked"/>
+
+                    <Button Text="Voir les offres sans compte" BackgroundColor="Gainsboro" CornerRadius="25" 
+                        VerticalOptions="End" TextColor="#251F87" Margin="80,0,80,0" 
+                            BorderColor="#251F87" BorderWidth="2" TextTransform="None" x:Name="VoirOffres"
+                            Clicked="VoirOffres_Clicked"/>
+
+                </StackLayout>
+
+                
+            </StackLayout>
+            <StackLayout VerticalOptions="End">
+                <Image Source="logo.png" Aspect="AspectFit" HeightRequest="40" WidthRequest="30" VerticalOptions="End" Margin="0,20"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

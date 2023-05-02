@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RHSkills.Views.RescueMdpPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="x" HorizontalOptions="End" TextTransform="None" VerticalOptions="Start" FontSize="25"
+                    WidthRequest="50" HeightRequest="50" BackgroundColor="Transparent" 
+                    TextColor="#251F87" CornerRadius="50" x:Name="FermerFenetre" Clicked="FermerFenetre_Clicked"/>
+            <Image Source="logo.png" Aspect="AspectFit" HorizontalOptions="Center" 
+                   HeightRequest="80" VerticalOptions="Center" Margin="10,100,10,80"
+                   InputTransparent="True"/>
+
+            <StackLayout HorizontalOptions="Center">
+                <Label Text="Vous avez oublié votre mot de passe?" FontSize="16"
+                       HorizontalTextAlignment="Center" TextColor="#251F87"/>
+
+                
+            </StackLayout>
+            <Frame Padding="1" Margin="20,10,20,10">
+                <Entry x:Name="username" Placeholder="Saisissez votre adresse mail ICI" Margin="5,0" Keyboard="Email"
+                       ClearButtonVisibility="WhileEditing" ReturnType="Next"/>
+            </Frame>
+           
+            
+            <Button Text="Valider" TextTransform="None" BackgroundColor="#251F87" TextColor="White" 
+                    HeightRequest="40" CornerRadius="20" Margin="20,0,20,0" VerticalOptions="End"
+                    Command="{Binding RescueCommand}"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

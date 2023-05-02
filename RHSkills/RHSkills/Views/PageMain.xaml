@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            xmlns:views="clr-namespace:RHSkills.Views"
+            x:Class="RHSkills.Views.PageMain">
+
+    <TabbedPage.BarBackgroundColor>
+        <OnPlatform x:TypeArguments="Color">
+            <OnPlatform.iOS>white</OnPlatform.iOS>
+            <OnPlatform.Android>white</OnPlatform.Android>
+
+        </OnPlatform>
+    </TabbedPage.BarBackgroundColor>
+
+    <TabbedPage.SelectedTabColor>#251F87</TabbedPage.SelectedTabColor>
+    <android:TabbedPage.ToolbarPlacement>Bottom</android:TabbedPage.ToolbarPlacement>
+
+    
+    <views:SearchPage IconImageSource="chercher.png"/>
+    <views:OffresPage IconImageSource="sacOffres.png"/>
+    <views:ProfilePage IconImageSource="utilisateur.png"/>
+
+</TabbedPage>

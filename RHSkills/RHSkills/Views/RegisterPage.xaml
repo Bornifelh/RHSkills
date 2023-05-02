@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RHSkills.Views.RegisterPage">
+
+    
+    <ContentPage.Content>
+       
+        <StackLayout>
+            <ScrollView>
+                
+            <StackLayout IsClippedToBounds="True" Margin="10" Spacing="5">
+                    <Frame Padding="2,0,2,5">
+                        <StackLayout>
+                            <Button Text="X" TextTransform="None" WidthRequest="50" HeightRequest="40" HorizontalOptions="End" CornerRadius="0" 
+                                    Margin="0,0,-7,-30" BackgroundColor="Transparent" FontAttributes="Bold" x:Name="FmRegisterPuch" Clicked="FmRegisterPuch_Clicked"/>
+                            <Label Text="Informations personnelles" HorizontalTextAlignment="Start" FontSize="16" FontAttributes="Bold" 
+                           TextColor="#251F87" Margin="5,0"/>
+                            <Entry Placeholder="* Entrer votre nom et prénom" TextTransform="Uppercase" ClearButtonVisibility="WhileEditing"/>
+                            <Label Text="Date de Naissace" TextTransform="None"/>
+                            <DatePicker  x:Name="DateNaiss"/>
+                            <Picker Title="Pays" x:Name="PaysResidence" />
+                            <Picker Title="Province" x:Name="ProvinceUser" />
+                            <Entry Placeholder="Ville" ClearButtonVisibility="WhileEditing"/>
+                            <Entry Placeholder="Quartier" ClearButtonVisibility="WhileEditing" />
+                            <Picker Title="Indicatif du pays" x:Name="Indicatif" />
+                            <Entry Placeholder="N° de téléphone" MaxLength="9" Keyboard="Numeric" ClearButtonVisibility="WhileEditing"/>
+
+                            <Picker Title="Sexe" x:Name="SexeUser"/>
+                        </StackLayout>
+                        
+                    </Frame>
+
+                    <Frame Padding="2,0,2,5">
+                        <StackLayout>
+
+                            <Label Text="Informations utilisateur" TextColor="#251F87" FontSize="16" Margin="5,10,0,5" FontAttributes="Bold"/>
+                            <Entry Placeholder="* Votre adresse mail" Keyboard="Email" ClearButtonVisibility="WhileEditing"/>
+                            <Entry Placeholder="* Votre mot de passe" IsPassword="True" ClearButtonVisibility="WhileEditing"/>
+                            <Entry Placeholder="* Confirmer votre mot de passe" IsPassword="True" ClearButtonVisibility="WhileEditing"/>
+
+                        </StackLayout>
+                    </Frame>
+                    
+                    <Button Text="Créer votre compte" BackgroundColor="#251F87" TextColor="White" TextTransform="None" Margin="0,0,0,10"
+                            CornerRadius="25"/>
+                    <Button Text="Annuler" BackgroundColor="Red" TextColor="White" TextTransform="None" Margin="30,0,30,15"
+                            CornerRadius="25" x:Name="btnCancel" Clicked="btnCancel_Clicked"/>
+            </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+    

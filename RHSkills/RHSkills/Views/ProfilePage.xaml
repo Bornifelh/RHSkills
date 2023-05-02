@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Profile"
+             
+             x:Class="RHSkills.Views.ProfilePage">
+    
+    <ContentPage.Content>
+        
+        <Grid>
+            <StackLayout>
+                
+                <Frame BackgroundColor="LightSkyBlue" HeightRequest="150" 
+                       HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                   <StackLayout>
+                        <Image Source="logo.png" Aspect="AspectFit" 
+                               HeightRequest="120" WidthRequest="200" 
+                               HorizontalOptions="Center" VerticalOptions="Center" />
+                        <Label Text="Profile"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center" />
+                    </StackLayout> 
+                </Frame>
+                <Image Source="ligne.png" HorizontalOptions="FillAndExpand" Margin="-35,-7,-35,0" HeightRequest="30"
+                       VerticalOptions="Start" Aspect="Fill"/>
+
+
+                <Button Text="Configuration Categories" x:Name="ButtonCategories"
+                    Clicked="ButtonCategories_Clicked" BackgroundColor="#009fe3" CornerRadius="12"/>
+
+                <Button Text="Configuration Produits" x:Name="ButtonProducts"
+                    Clicked="ButtonProducts_Clicked" BackgroundColor="#009fe3" CornerRadius="12"/>
+                
+            </StackLayout>
+        </Grid>
+        
+            
+
+
+    </ContentPage.Content>
+</ContentPage>
